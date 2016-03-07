@@ -1,0 +1,67 @@
+.pesquisar
+	position: fixed
+	top: 1.2em
+	right: 0.5em
+	white-space: nowrap
+	
+	button
+		position: fixed
+		top: 1.2em
+		right: 0.5em
+		border: 0px solid transparent
+		background: none transparent
+		
+		span:before
+			font-size: 1.5em
+		
+	
+	&__input
+		position: relative
+		
+		label
+			@extend .transition
+			color: $branco
+			position: absolute
+			top: 0.8em
+			left: 0.75em
+			font-size: 1em
+			cursor: text
+			font-weight: 300
+			color: lighten($cor-primaria, 40%)
+			
+		input
+			
+			&:hover+label, &:focus+label, &:valid+label
+				font-size: 0.8em
+				top: -0.5em
+				left: 0
+
+	input, button
+		@extend .border-box
+		@extend .transition
+		font-family: $fonte-padrao
+		font-weight: 300
+		outline: none
+		padding: 5px 10px
+		color: $branco
+		
+		&[type="text"]
+			border: solid 2px transparent
+			border-bottom-color: rgba($branco, 0.5)
+			background: none transparent
+			width: 200px
+			font-size: 1.2em
+			
+			&:hover, &:focus
+				border-bottom-color: $branco
+			
+			&:before
+				content: "lupa"
+				color: white
+			
+		&[type="submit"]
+			border: 0px solid transparent
+			background: none transparent
+			font-weight: 300
+			font-size: 1em
+			

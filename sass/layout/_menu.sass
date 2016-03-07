@@ -1,0 +1,30 @@
+nav
+	&.menu
+		+box-shadow(0 0 15px rgba(black, 0.8))
+		text-align: center
+		background: rgba($cor-primaria, 0.9)
+		color: $branco
+		position: fixed
+		top: 0
+		right: 0
+		left: 0
+		z-index: 1
+		height: 70px
+		
+		ul
+			max-width: 1200px
+			margin: 0 auto
+			text-align: right
+
+		li
+			display: inline-block
+
+			a
+				padding: 20px 40px
+				color: $branco
+				text-decoration: none
+				display: block
+
+				&:hover
+					background-color: $cor-primaria
+					color: $branco

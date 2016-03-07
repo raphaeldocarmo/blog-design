@@ -1,0 +1,179 @@
+section
+
+	article
+		@extend .box-shadow
+		@extend .border-box
+		position: relative
+		background-color: $branco
+		padding: 20px
+		margin: 0 0 1em
+		
+		.assinatura
+			margin-top: 2em
+			font-style: italic
+		
+		.leia-mais
+			@extend .transition
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			display: block
+			padding: 1em
+			text-align: center
+			background: $cor-de-link
+			color: $branco
+			text-decoration: none
+			text-transform: uppercase
+			
+			&:before
+				content: "+ "
+				font-weight: 600
+			
+			&:hover
+				+background-escuro($cor-primaria)
+			
+		.data
+			+border-radius(15px 15px 15px 0)
+			background-color: rgba($cor-primaria, 0.9)
+			position: absolute
+			top: 5px
+			right: 5px
+			padding: 10px
+			text-align: center
+			width: 40px
+			
+			p
+				border-bottom: 2px solid $branco
+				color: $branco !important
+				font-size: 1.5em
+				
+				&:last-child
+					border: none
+					font-size: 0.8em
+				
+		h2
+		
+			a
+				text-decoration: none
+				color: $cor-de-fonte
+				
+		&:hover
+			border-color: $cor-primaria
+		
+			h2
+				a
+					+texto-hover($cor-de-fonte)
+
+	&.posts
+		+display-flex
+		+flex-wrap(wrap)
+		
+		article
+			+flex(1 0)
+			min-width: 25em
+			margin: .5em
+			padding: 0 0 50px
+			
+			a
+				text-decoration: none
+				
+				p
+					color: $cor-de-fonte
+				
+				&:hover h2
+					color: $cor-primaria
+			
+			.resumo
+				@extend .border-box
+				padding: 0.5em
+			
+			h2
+				@extend .border-box
+				+background-size(cover)
+				background-position: center
+				background-repeat: no-repeat
+				background-color: rgba(black, 0.3)
+				padding: 2em 0.5em
+				text-transform: uppercase
+				font-weight: 600
+				color: $branco
+				min-height: 300px
+				max-height: 300px
+			
+			.categoria
+				@extend .border-box
+				+border-radius(0 15px 0 15px)
+				position: absolute
+				top: 0
+				left: 0
+				display: block
+				padding: 0.5em
+				font-size: 0.9em
+				text-transform: uppercase
+				font-weight: 300
+				min-width: 5em
+				text-align: center
+				
+				&.UX
+					background-color: rgba($cor-ux, 0.9)
+					color: $branco
+				
+				&.UI
+					background-color: rgba($cor-ui, 0.9)
+					color: $branco
+				
+				&.Design
+					background-color: rgba($cor-design, 0.9)
+					color: $branco
+				
+				&.Front-End
+					background-color: rgba($cor-front-end, 0.9)
+					color: $branco
+				
+				&.Geral
+					background-color: rgba($cor-post-geral, 0.9)
+					color: $cor-de-fonte
+					
+.carregar-posts
+	@extend .transition
+	background: none transparent
+	border: 1px solid transparent
+	font-family: $fonte-padrao
+	color: lighten($cor-de-fonte, 30%)
+	display: block
+	padding: 1em
+	font-size: 1.5em
+	cursor: pointer
+	margin: 0 auto 2em
+    
+	&:hover
+		@extend .box-shadow
+		@extend .border-radius
+		+background-claro($cor-terciaria)
+		color: $cor-primaria
+		border-color: $cor-primaria
+
+
+h4.titulo-comentario
+	padding: 1em 0
+	margin-top: 2em
+	border-top: 1px solid lighten($cor-terciaria, 20%)
+	
+.mensagem-de-aviso
+	+texto-claro($cor-de-fonte)
+	font-weight: 600
+	text-align: center
+	padding: 1em
+	font-size: 1.25em
+	
+	
+.plugins-sociais
+
+	.fb-like, .twitter-share
+		display: inline-block
+		margin: 0 0.1em 1em 0
+		vertical-align: top
+		
+.fb-comments, .fb-comments span, .fb-comments iframe
+	width: 100% !important

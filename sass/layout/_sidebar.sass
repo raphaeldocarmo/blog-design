@@ -1,0 +1,45 @@
+aside
+    @extend .border-box
+    @extend .transition
+    +display-flex
+    +flex-wrap(wrap)
+    background: darken($cor-primaria, 10%)
+    color: $branco
+    
+    .tagcloud
+    
+        a
+            color: $branco
+            text-decoration: none
+            
+            &:hover
+                text-decoration: underline
+    
+    .widget
+        @extend .border-box
+        display: inline-block
+        +flex(1 0)
+        min-width: 25em
+        padding: 2em
+        
+        &:hover
+            background: darken($cor-primaria, 12%)
+        
+        ul
+            margin: 0
+            padding: 0
+        
+            li
+                list-style-type: disc
+                
+                a
+                    @extend .border-radius
+                    @extend .transition
+                    color: $branco
+                    text-decoration: none
+                    display: block
+                    padding: 10px 5px
+                    
+                    &:hover
+                        background: rgba($branco, 0.1)
+    

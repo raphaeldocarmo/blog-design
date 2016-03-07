@@ -1,0 +1,63 @@
+body
+	padding: 0
+	min-width: 200px
+	font-family: $fonte-padrao
+	font-weight: 100
+	font-size: 15px
+	color: $cor-de-fonte
+	background-image: url(../imgs/fundo.svg)
+	background-repeat: no-repeat
+	background-position: center center
+	+background-size(cover)
+	+background-claro($cor-terciaria)
+
+section
+	max-width: 1200px
+	margin: 0 auto
+	padding: 0
+	@extend .border-box
+
+
+h1
+	font-size: 3em
+	margin-bottom: 1em
+	font-weight: 100
+
+h2
+	font-size: 2.5em
+	margin-bottom: 0.75em
+	color: $cor-primaria
+
+	&:hover
+		+texto-hover($cor-primaria)
+
+h3
+	font-size: 2em
+	margin-bottom: 0.5em
+
+h4
+	font-size: 1.5em
+
+p
+	line-height: 1.15em
+	margin-bottom: 0.2em
+	
+small
+	font-size: 0.8em
+	
+button, input, select, textarea
+	outline: none
+	
+strong, b
+	font-weight: 600
+
+em, i
+	font-style: italic
+	
+a
+	color: $cor-secundaria
+	text-decoration: none
+	
+	&:hover
+		+texto-hover($cor-secundaria)
+		text-decoration: underline

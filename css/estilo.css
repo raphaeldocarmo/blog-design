@@ -1,0 +1,600 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.border-box, section, .logo, section article, section.posts article .resumo, section.posts article h2, section.posts article .categoria, aside, aside .widget, footer, footer .assinatura-rodape, footer .redes-sociais, .pesquisar input, .pesquisar button {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.transition, section article .leia-mais, .carregar-posts, aside, aside .widget ul li a, .pesquisar__input label, .pesquisar input, .pesquisar button {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+.circulo, .logo {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.border-radius, .carregar-posts:hover, aside .widget ul li a {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.box-shadow, section article, .carregar-posts:hover {
+  -moz-box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  padding: 0;
+  min-width: 200px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: #555;
+  background-image: url(../imgs/fundo.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-color: #eeeeee;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.75em;
+  color: #9A6A0B;
+}
+h2:hover {
+  color: #6a4908;
+}
+
+h3 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+p {
+  line-height: 1.15em;
+  margin-bottom: 0.2em;
+}
+
+small {
+  font-size: 0.8em;
+}
+
+button, input, select, textarea {
+  outline: none;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+em, i {
+  font-style: italic;
+}
+
+a {
+  color: #910CE5;
+  text-decoration: none;
+}
+a:hover {
+  color: #7209b5;
+  text-decoration: underline;
+}
+
+header {
+  background-image: url(../imgs/img-fundo.svg);
+  background-position: top left;
+  background-repeat: repeat-x;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  padding-top: 70px;
+}
+
+.logo {
+  font-weight: lighter;
+  display: block;
+  background: rgba(255, 255, 255, 0.9);
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  border: 2px dashed #bbbbbb;
+  padding: 60px 0 0;
+  margin: 2em auto 2em 1em;
+  color: #555;
+}
+.logo:hover {
+  text-decoration: none;
+  color: #555;
+}
+.logo.logo-menor {
+  border: none transparent;
+  font-size: 1.25em;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  color: white;
+  background: transparent;
+  position: fixed;
+  margin: 0;
+  top: 5px;
+  left: 5px;
+}
+.logo.logo-menor span {
+  color: white;
+}
+.logo.logo-menor span.assinatura {
+  color: #f6cd7b;
+  font-size: 1.5em !important;
+}
+.logo.logo-menor span small {
+  font-size: 0.8em;
+  display: inline;
+  margin: 0;
+  padding: 0 3px;
+}
+.logo.logo-menor span.assinatura {
+  font-size: 2em;
+}
+.logo a {
+  text-decoration: none;
+  color: #555;
+}
+.logo span {
+  display: block;
+  padding: 0.25em 0 0;
+}
+.logo span.titulo {
+  font-family: "Norican", cursive;
+  font-size: 0.8em;
+}
+.logo span.assinatura {
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  font-family: "Calligraffitti", cursive;
+  color: #9A6A0B;
+  font-size: 1em;
+}
+.logo small {
+  font-size: 0.3em;
+  display: block;
+  padding: 10px;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+nav.menu {
+  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  background: rgba(154, 106, 11, 0.9);
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 70px;
+}
+nav.menu ul {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: right;
+}
+nav.menu li {
+  display: inline-block;
+}
+nav.menu li a {
+  padding: 20px 40px;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+nav.menu li a:hover {
+  background-color: #9A6A0B;
+  color: white;
+}
+
+section article {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  margin: 0 0 1em;
+}
+section article .assinatura {
+  margin-top: 2em;
+  font-style: italic;
+}
+section article .leia-mais {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  padding: 1em;
+  text-align: center;
+  background: #9A6A0B;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+section article .leia-mais:before {
+  content: "+ ";
+  font-weight: 600;
+}
+section article .leia-mais:hover {
+  background-color: #6a4908;
+}
+section article .data {
+  -moz-border-radius: 15px 15px 15px 0;
+  -webkit-border-radius: 15px;
+  border-radius: 15px 15px 15px 0;
+  background-color: rgba(154, 106, 11, 0.9);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 40px;
+}
+section article .data p {
+  border-bottom: 2px solid white;
+  color: white !important;
+  font-size: 1.5em;
+}
+section article .data p:last-child {
+  border: none;
+  font-size: 0.8em;
+}
+section article h2 a {
+  text-decoration: none;
+  color: #555;
+}
+section article:hover {
+  border-color: #9A6A0B;
+}
+section article:hover h2 a {
+  color: #3c3c3c;
+}
+section.posts {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+section.posts article {
+  -webkit-flex: 1 0;
+  flex: 1 0;
+  min-width: 25em;
+  margin: 0.5em;
+  padding: 0 0 50px;
+}
+section.posts article a {
+  text-decoration: none;
+}
+section.posts article a p {
+  color: #555;
+}
+section.posts article a:hover h2 {
+  color: #9A6A0B;
+}
+section.posts article .resumo {
+  padding: 0.5em;
+}
+section.posts article h2 {
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 2em 0.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  min-height: 300px;
+  max-height: 300px;
+}
+section.posts article .categoria {
+  -moz-border-radius: 0 15px 0 15px;
+  -webkit-border-radius: 0;
+  border-radius: 0 15px 0 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  padding: 0.5em;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 300;
+  min-width: 5em;
+  text-align: center;
+}
+section.posts article .categoria.UX {
+  background-color: rgba(20, 94, 229, 0.9);
+  color: white;
+}
+section.posts article .categoria.UI {
+  background-color: rgba(0, 158, 123, 0.9);
+  color: white;
+}
+section.posts article .categoria.Design {
+  background-color: rgba(228, 0, 129, 0.9);
+  color: white;
+}
+section.posts article .categoria.Front-End {
+  background-color: rgba(153, 153, 153, 0.9);
+  color: white;
+}
+section.posts article .categoria.Geral {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #555;
+}
+
+.carregar-posts {
+  background: none transparent;
+  border: 1px solid transparent;
+  font-family: "Open Sans", sans-serif;
+  color: #a2a2a2;
+  display: block;
+  padding: 1em;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin: 0 auto 2em;
+}
+.carregar-posts:hover {
+  background-color: #eeeeee;
+  color: #9A6A0B;
+  border-color: #9A6A0B;
+}
+
+h4.titulo-comentario {
+  padding: 1em 0;
+  margin-top: 2em;
+  border-top: 1px solid #888888;
+}
+
+.mensagem-de-aviso {
+  color: #6f6f6f;
+  font-weight: 600;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.25em;
+}
+
+.plugins-sociais .fb-like, .plugins-sociais .twitter-share {
+  display: inline-block;
+  margin: 0 0.1em 1em 0;
+  vertical-align: top;
+}
+
+.fb-comments, .fb-comments span, .fb-comments iframe {
+  width: 100% !important;
+}
+
+aside {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: #6a4908;
+  color: white;
+}
+aside .tagcloud a {
+  color: white;
+  text-decoration: none;
+}
+aside .tagcloud a:hover {
+  text-decoration: underline;
+}
+aside .widget {
+  display: inline-block;
+  -webkit-flex: 1 0;
+  flex: 1 0;
+  min-width: 25em;
+  padding: 2em;
+}
+aside .widget:hover {
+  background: #614307;
+}
+aside .widget ul {
+  margin: 0;
+  padding: 0;
+}
+aside .widget ul li {
+  list-style-type: disc;
+}
+aside .widget ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 5px;
+}
+aside .widget ul li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+footer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: #231803;
+  color: #9A6A0B;
+  padding: 20px;
+}
+footer .assinatura-rodape, footer .redes-sociais {
+  display: inline-block;
+  -webkit-flex: 1 1;
+  flex: 1 1;
+  width: 50%;
+  min-width: 25em;
+  padding: 0.5em;
+}
+footer h4 {
+  margin-bottom: 0.5em;
+}
+footer .redes-sociais {
+  text-align: right;
+}
+footer .redes-sociais ul li {
+  display: inline-block;
+  padding: 3px;
+}
+
+.pesquisar {
+  position: fixed;
+  top: 1.2em;
+  right: 0.5em;
+  white-space: nowrap;
+}
+.pesquisar button {
+  position: fixed;
+  top: 1.2em;
+  right: 0.5em;
+  border: 0px solid transparent;
+  background: none transparent;
+}
+.pesquisar button span:before {
+  font-size: 1.5em;
+}
+.pesquisar__input {
+  position: relative;
+}
+.pesquisar__input label {
+  color: white;
+  position: absolute;
+  top: 0.8em;
+  left: 0.75em;
+  font-size: 1em;
+  cursor: text;
+  font-weight: 300;
+  color: #f6cd7b;
+}
+.pesquisar__input input:hover + label, .pesquisar__input input:focus + label, .pesquisar__input input:valid + label {
+  font-size: 0.8em;
+  top: -0.5em;
+  left: 0;
+}
+.pesquisar input, .pesquisar button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  outline: none;
+  padding: 5px 10px;
+  color: white;
+}
+.pesquisar input[type="text"], .pesquisar button[type="text"] {
+  border: solid 2px transparent;
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  background: none transparent;
+  width: 200px;
+  font-size: 1.2em;
+}
+.pesquisar input[type="text"]:hover, .pesquisar input[type="text"]:focus, .pesquisar button[type="text"]:hover, .pesquisar button[type="text"]:focus {
+  border-bottom-color: white;
+}
+.pesquisar input[type="text"]:before, .pesquisar button[type="text"]:before {
+  content: "lupa";
+  color: white;
+}
+.pesquisar input[type="submit"], .pesquisar button[type="submit"] {
+  border: 0px solid transparent;
+  background: none transparent;
+  font-weight: 300;
+  font-size: 1em;
+}

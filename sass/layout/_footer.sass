@@ -1,0 +1,26 @@
+footer
+    +display-flex
+    +flex-wrap(wrap)
+    @extend .border-box
+    background: darken($cor-primaria, 25%)
+    color: $cor-primaria
+    padding: 20px
+    
+    .assinatura-rodape, .redes-sociais
+        @extend .border-box
+        display: inline-block
+        +flex(1 1)
+        width: 50%
+        min-width: 25em
+        padding: .5em
+
+    h4
+        margin-bottom: 0.5em
+        
+    .redes-sociais
+        text-align: right
+        
+        ul
+            li
+                display: inline-block
+                padding: 3px

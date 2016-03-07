@@ -1,0 +1,82 @@
+header
+    background-image: url(../imgs/img-fundo.svg)
+    background-position: top left
+    background-repeat: repeat-x
+    +background-size(contain)
+    padding-top: 70px
+	
+.logo
+    @extend .border-box
+    @extend .circulo
+    font-weight: lighter
+    display: block
+    background: rgba($branco, 0.9)
+    width: 250px
+    height: 250px
+    text-align: center
+    border: 2px dashed lighten($cor-terciaria, 40%)
+    padding: 60px 0 0
+    margin: 2em auto 2em 1em
+    color: $cor-terciaria
+    
+    &:hover
+        text-decoration: none
+        color: $cor-terciaria
+    
+    &.logo-menor
+        border: none transparent
+        font-size: 1.25em
+        width: auto
+        height: auto
+        padding: 10px
+        color: $branco
+        background: transparent
+        position: fixed
+        margin: 0
+        top: 5px
+        left: 5px
+        
+        span
+            color: $branco
+            
+            &.assinatura
+                color: lighten($cor-primaria, 40%)
+                font-size: 1.5em !important
+        
+        span
+            small
+                font-size: 0.8em
+                display: inline
+                margin: 0
+                padding: 0 3px
+        
+            &.assinatura
+                font-size: 2em
+        
+    
+    a
+        text-decoration: none
+        color: $cor-terciaria
+
+    span
+        display: block
+        padding: 0.25em 0 0
+        
+        &.titulo
+            font-family: $fonte-cursiva
+            font-size: 0.8em
+        
+        &.assinatura
+            +rotate(-5deg)
+            font-family: $fonte-assinatura
+            color: $cor-primaria
+            font-size: 1em
+        
+    small
+        font-size: 0.3em
+        display: block
+        padding: 10px
+        font-weight: 400
+        font-style: italic
+        text-transform: uppercase
+	        
