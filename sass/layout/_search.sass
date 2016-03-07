@@ -64,4 +64,36 @@
 			background: none transparent
 			font-weight: 300
 			font-size: 1em
+
+.nao-encontrado
+	padding: 2em !important
+	text-align: center
+	
+	.pesquisar
+		position: relative
+		margin: 2em auto
+		width: 30em
+		
+		&__input
 			
+			label
+				color: lighten($cor-terciaria, 40%)
+		
+		button
+			position: absolute
+			top: 0.2em
+			
+			label
+				color: $cor-terciaria
+				font-size: 1em
+				color: lighten($cor-terciaria, 40%)
+	
+		input, button
+			color: $cor-terciaria
+			
+			&[type="text"]
+				border-bottom-color: rgba($cor-terciaria, 0.5)
+				width: 100%
+				
+				&:hover, &:focus
+					border-bottom-color: $cor-terciaria

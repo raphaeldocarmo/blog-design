@@ -598,3 +598,35 @@ footer .redes-sociais ul li {
   font-weight: 300;
   font-size: 1em;
 }
+
+.nao-encontrado {
+  padding: 2em !important;
+  text-align: center;
+}
+.nao-encontrado .pesquisar {
+  position: relative;
+  margin: 2em auto;
+  width: 30em;
+}
+.nao-encontrado .pesquisar__input label {
+  color: #bbbbbb;
+}
+.nao-encontrado .pesquisar button {
+  position: absolute;
+  top: 0.2em;
+}
+.nao-encontrado .pesquisar button label {
+  color: #555;
+  font-size: 1em;
+  color: #bbbbbb;
+}
+.nao-encontrado .pesquisar input, .nao-encontrado .pesquisar button {
+  color: #555;
+}
+.nao-encontrado .pesquisar input[type="text"], .nao-encontrado .pesquisar button[type="text"] {
+  border-bottom-color: rgba(85, 85, 85, 0.5);
+  width: 100%;
+}
+.nao-encontrado .pesquisar input[type="text"]:hover, .nao-encontrado .pesquisar input[type="text"]:focus, .nao-encontrado .pesquisar button[type="text"]:hover, .nao-encontrado .pesquisar button[type="text"]:focus {
+  border-bottom-color: #555;
+}
