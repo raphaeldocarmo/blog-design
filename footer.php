@@ -7,12 +7,6 @@
 			
 			<p>
 				<small>
-					Todos os direitos reservados.
-				</small>
-			</p>
-			
-			<p>
-				<small>
 					Developed by Raphael do Carmo - Powered by wordpress
 				</small>
 			</p>
