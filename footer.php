@@ -59,6 +59,7 @@
 	</footer>
 
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/infinite-scroll.js"></script>
+	<!--<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/helium.js" onload="helium.init()" async></script>-->
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/comum.js"></script>
 	
 </body>

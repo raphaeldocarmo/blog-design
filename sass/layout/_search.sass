@@ -1,13 +1,14 @@
-.pesquisar
+.pesquisar-posicao
 	position: fixed
 	top: 1.2em
 	right: 0.5em
+	
+.pesquisar
+	@extend .pesquisar-posicao
 	white-space: nowrap
 	
 	button
-		position: fixed
-		top: 1.2em
-		right: 0.5em
+		@extend .pesquisar-posicao
 		border: 0px solid transparent
 		background: none transparent
 		
@@ -31,10 +32,12 @@
 			
 		input
 			
-			&:hover+label, &:focus+label, &:valid+label
-				font-size: 0.8em
-				top: -0.5em
-				left: 0
+			&:hover, &:focus, &:valid
+				
+				&+label
+					font-size: 0.8em
+					top: -0.5em
+					left: 0
 
 	input, button
 		@extend .border-box
@@ -42,7 +45,7 @@
 		font-family: $fonte-padrao
 		font-weight: 300
 		outline: none
-		padding: 5px 10px
+		padding: 0.3em 0.5em
 		color: $branco
 		
 		&[type="text"]

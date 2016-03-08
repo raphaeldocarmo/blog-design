@@ -125,10 +125,10 @@ h1 {
 h2 {
   font-size: 2.5em;
   margin-bottom: 0.75em;
-  color: #9A6A0B;
+  color: #910CE5;
 }
 h2:hover {
-  color: #6a4908;
+  color: #7209b5;
 }
 
 h3 {
@@ -214,7 +214,7 @@ header {
   color: white;
 }
 .logo.logo-menor span.assinatura {
-  color: #f6cd7b;
+  color: #e5c1fc;
   font-size: 1.5em !important;
 }
 .logo.logo-menor span small {
@@ -244,7 +244,7 @@ header {
   -webkit-transform: rotate(-5deg);
   transform: rotate(-5deg);
   font-family: "Calligraffitti", cursive;
-  color: #9A6A0B;
+  color: #910CE5;
   font-size: 1em;
 }
 .logo small {
@@ -261,7 +261,7 @@ nav.menu {
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
   text-align: center;
-  background: rgba(154, 106, 11, 0.9);
+  background: rgba(145, 12, 229, 0.9);
   color: white;
   position: fixed;
   top: 0;
@@ -285,7 +285,7 @@ nav.menu li a {
   display: block;
 }
 nav.menu li a:hover {
-  background-color: #9A6A0B;
+  background-color: #910CE5;
   color: white;
 }
 
@@ -307,7 +307,7 @@ section article .leia-mais {
   display: block;
   padding: 1em;
   text-align: center;
-  background: #9A6A0B;
+  background: #910CE5;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -317,13 +317,13 @@ section article .leia-mais:before {
   font-weight: 600;
 }
 section article .leia-mais:hover {
-  background-color: #6a4908;
+  background-color: #7209b5;
 }
 section article .data {
   -moz-border-radius: 15px 15px 15px 0;
   -webkit-border-radius: 15px;
   border-radius: 15px 15px 15px 0;
-  background-color: rgba(154, 106, 11, 0.9);
+  background-color: rgba(145, 12, 229, 0.9);
   position: absolute;
   top: 5px;
   right: 5px;
@@ -345,7 +345,7 @@ section article h2 a {
   color: #555;
 }
 section article:hover {
-  border-color: #9A6A0B;
+  border-color: #910CE5;
 }
 section article:hover h2 a {
   color: #3c3c3c;
@@ -370,7 +370,7 @@ section.posts article a p {
   color: #555;
 }
 section.posts article a:hover h2 {
-  color: #9A6A0B;
+  color: #910CE5;
 }
 section.posts article .resumo {
   padding: 0.5em;
@@ -439,8 +439,8 @@ section.posts article .categoria.Geral {
 }
 .carregar-posts:hover {
   background-color: #eeeeee;
-  color: #9A6A0B;
-  border-color: #9A6A0B;
+  color: #910CE5;
+  border-color: #910CE5;
 }
 
 h4.titulo-comentario {
@@ -472,7 +472,7 @@ aside {
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  background: #6a4908;
+  background: #7209b5;
   color: white;
 }
 aside .tagcloud a {
@@ -490,7 +490,7 @@ aside .widget {
   padding: 2em;
 }
 aside .widget:hover {
-  background: #614307;
+  background: #6c09ab;
 }
 aside .widget ul {
   margin: 0;
@@ -514,8 +514,8 @@ footer {
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  background: #231803;
-  color: #9A6A0B;
+  background: #44066c;
+  color: #910CE5;
   padding: 20px;
 }
 footer .assinatura-rodape, footer .redes-sociais {
@@ -537,16 +537,16 @@ footer .redes-sociais ul li {
   padding: 3px;
 }
 
-.pesquisar {
+.pesquisar-posicao, .pesquisar, .pesquisar button {
   position: fixed;
   top: 1.2em;
   right: 0.5em;
+}
+
+.pesquisar {
   white-space: nowrap;
 }
 .pesquisar button {
-  position: fixed;
-  top: 1.2em;
-  right: 0.5em;
   border: 0px solid transparent;
   background: none transparent;
 }
@@ -564,7 +564,7 @@ footer .redes-sociais ul li {
   font-size: 1em;
   cursor: text;
   font-weight: 300;
-  color: #f6cd7b;
+  color: #e5c1fc;
 }
 .pesquisar__input input:hover + label, .pesquisar__input input:focus + label, .pesquisar__input input:valid + label {
   font-size: 0.8em;
@@ -575,7 +575,7 @@ footer .redes-sociais ul li {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   outline: none;
-  padding: 5px 10px;
+  padding: 0.3em 0.5em;
   color: white;
 }
 .pesquisar input[type="text"], .pesquisar button[type="text"] {
